@@ -10,7 +10,7 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 
-export function FeaturesSection() {
+export default function FeaturesSection() {
   return (
     <>
       <div className="relative max-w-7xl mx-auto mt-10 pt-10 h-auto">

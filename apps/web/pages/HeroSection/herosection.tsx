@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 
-export function HeroSection() {
+export default function HeroSection() {
   return (
     <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center">
       <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 ">

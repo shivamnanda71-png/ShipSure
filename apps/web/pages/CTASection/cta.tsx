@@ -3,7 +3,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "motion/react";
 
-export function CTASection() {
+export default function CTASection() {
   const stats = [
     {
       percentage: "19.4%",

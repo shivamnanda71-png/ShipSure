@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export function FAQSection() {
+export default function FAQSection() {
   return (
     <div className="w-7xl mx-auto p-10 mt-10 ">
       <h2 className="text-center text-4xl font-bold">

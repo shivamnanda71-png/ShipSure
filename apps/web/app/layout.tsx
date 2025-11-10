@@ -4,6 +4,7 @@ import "./globals.css";
 import { NavBar } from "@/components/components/navbar";
 import Footer from "@/components/components/footer";
 import { ClerkProvider } from "@clerk/nextjs";
+import ConvexClientProvider from "@/providers/convex-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,14 +26,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable}`}>
-          {/* <NavBar /> */}
-          {children}
-          {/* <Footer /> */}
-        </body>
-      </html>
-    </ClerkProvider>
+    <ConvexClientProvider>
+      <ClerkProvider>
+        <html lang="en">
+          <body className={`${geistSans.variable} ${geistMono.variable}`}>
+            {/* <NavBar /> */}
+            {children}
+            {/* <Footer /> */}
+          </body>
+        </html>
+      </ClerkProvider>
+    </ConvexClientProvider>
   );
 }

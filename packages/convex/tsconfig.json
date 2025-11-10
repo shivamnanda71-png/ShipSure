@@ -8,6 +8,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["convex"],
+  "include": ["convex","src"],
   "exclude": ["node_modules", "dist"]
 }
